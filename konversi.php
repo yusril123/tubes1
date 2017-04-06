@@ -11,7 +11,7 @@ $result = mysqli_query($connection, $sql) or die("Error " . mysqli_error($connec
 while ($row = mysqli_fetch_assoc($result)) {
     $ArrAnggota[] = $row;
 }
-
+//menambah komentar echo
 echo json_encode($ArrAnggota, JSON_PRETTY_PRINT);
 
 //tutup koneksi ke database
