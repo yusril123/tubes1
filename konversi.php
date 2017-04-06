@@ -13,7 +13,7 @@ while ($row = mysqli_fetch_assoc($result)) {
 }
 //menambah komentar echo
 echo json_encode($ArrAnggota, JSON_PRETTY_PRINT);
-
+echo "tampilan json";
 //tutup koneksi ke database
 mysqli_close($connection);
 ?>
